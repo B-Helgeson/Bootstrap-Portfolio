@@ -1,73 +1,88 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <title>About Me</title>
-    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
+    <!-- Adding Bootstrap CSS Before Custom CSS, Using bootstrap source code for visibility -->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 
-<body>
-    <header id="masthead">
-        <div class="container">
-            <a href="index.html" id="logo">Brandon Helgeson</a>
-            <nav>
-                <a href="index.html">About</a>
-                <a href="portfolio.html">Portfolio</a>
-                <a href="contact.html">Contact</a>
-            </nav>
+<!-- Bootstrap Navbar -->
+<header id="masthead">
+    <nav class="navbar navbar-default">
+        <div class="container-fluid container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <a class="navbar-brand" href="index.html" id="logo">Brandon Helgeson</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="index.html">About</a>
+                    </li>
+                    <li>
+                        <a href="portfolio.html">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
         </div>
-    </header>
+        <!-- /.container-fluid -->
+    </nav>
 
 <div id="main-container" class="container">
-
-    <section class="main-section">
-        <h1>Contact</h1>
+<div class="row">
+    <section class="main-section col-sm-8">
+        <div class="page-header">
+            <h1>Contact</h1>
+        </div>
 
         <form id="contact-form">
             <ul>
                 <li>
                     <label for="name">Name</label>
-                    <input type="text" 
-                           name="name" 
-                           id="name"
-                           placeholder="John Smith" 
-                           required="required">
+                    <input type="text" name="name" id="name" placeholder="John Smith" required="required">
                 </li>
                 <li>
                     <label for="email">Email</label>
-                    <input type="text" 
-                            name="email" 
-                            id="email"
-                            placeholder="example@mail.com" 
-                            required="required">
+                    <input type="text" name="email" id="email" placeholder="example@mail.com" required="required">
                 </li>
                 <li>
                     <label for="message">Message</label>
-                    <textarea id="message" 
-                            name="message" 
-                            required="required"></textarea>
+                    <textarea id="message" name="message" required="required"></textarea>
                 </li>
             </ul>
-            
+
             <input type="submit" name="submit">
         </form>
-
     </section>
 
-    <section class="sidebar">
-        <div id="connect">
-            <h2>Connect with Me</h2>
-            <a href="https://github.com/B-Helgeson" target="_blank">
-                <img src="assets/images/git.png" class="social" alt="Github"></a>
-            <a href="https://www.linkedin.com/in/brandonhelgeson/" target="_blank">
-                <img src="assets/images/link.png" class="social" alt="LinkedIn"></a>
-            <a href="https://stackexchange.com/users/12876070/brandon-helgeson" target="_blank">
-                <img src="assets/images/stack.png" class="social" alt="Stack Overflow"></a>
-        </div>
-    </section>
-
+    <div class="sidebar col-sm-4">
+            <div id="connect">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h2 class="panel-title">Connect with Me</h2>
+                    </div>
+                    <div class="panel-body">
+                            <a href="https://github.com/B-Helgeson" target="_blank">
+                                <img src="assets/images/git.png" class="social" alt="Github"></a>
+                            <a href="https://www.linkedin.com/in/brandonhelgeson/" target="_blank">
+                                <img src="assets/images/link.png" class="social" alt="LinkedIn"></a>
+                            <a href="https://stackexchange.com/users/12876070/brandon-helgeson" target="_blank">
+                                <img src="assets/images/stack.png" class="social" alt="Stack Overflow"></a>
+                    </div>
+                </div>
+            </div>
+        </div> 
 </div>
+<!--closing row-->
+</div>
+<!--closing container-->
 
 <footer>
     <div class="container">
